@@ -1,30 +1,63 @@
 .App {
   height: 100vh;
-  color: #003049;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background: url('https://source.unsplash.com/collection/1408037/1600x900') no-repeat center; */
 }
+
 
 
 .container {
   position: relative;
-  background-color: aquamarine;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 400px;
-  min-height: 364px;
+  width: 350px;
+  min-height: 300px;
   padding: 1rem;
-  border-radius: 5px;
+  border-radius: 50px;
   box-shadow: 0 0px 10px #111;
-  mix-blend-mode: difference;
+  opacity: 0.79;
   user-select: none;
 }
 
-.container2 {
-  padding: 10px;
-  justify-content: right;
-  position: relative;
+.weather-main {
+  text-align: left;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 266%;
+  line-height: 195%;
+  opacity: 1;
+}
 
+.info-sub {
+  font-family: 'Arial', sans-serif;
+  font-size: 75%;
+  text-align: left;
+  opacity: .75;
+}
+
+.temperature {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 366%;
+}
+
+.icon {
+  display:flex;    
+  align-items:flex-end;
+  justify-content: flex-end;
+}
+
+div.newMove1 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 500px;
+}
+
+div.newMove2 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 1290px;
 }

@@ -119,17 +119,13 @@ class App extends React.Component {
 
   render() {
     return (
+      <body>
       <div className='App'>
         <div className='container'>
               {this.returnActiveView(this.state.status)}
         </div>
-        <div className='container2'>
-            <iframe src="https://open.spotify.com/embed/playlist/5zxPaDEr4XtbvaZdUYN4FJ?si=dIcSUKAVQj6vUg1s4eJDNA" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
-        <div className='container2'>
-            <iframe src="https://open.spotify.com/embed/playlist/6w7KExnFpSHdxfv15S6egq" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
       </div>
+      </body>
     );
   }
 }
