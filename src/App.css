@@ -49,15 +49,15 @@
 }
 
 div.newMove1 {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   right: 0;
-  width: 500px;
+  width: 0px;
 }
 
 div.newMove2 {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   right: 0;
-  width: 1290px;
+  width: 622px;
 }

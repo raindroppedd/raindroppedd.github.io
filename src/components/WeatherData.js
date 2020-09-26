@@ -126,13 +126,12 @@ const WeatherData = ({ data }) => {
           </div>
         </div>
 
-        <div class='newMove2'> 
-          <iframe src={`https://open.spotify.com/embed/playlist/${playlist[0][main][1]}` } width="250" height="600" frameborder="0" allowtransparency="true" allow="encrypted-media" opacity ='.0'></iframe>
-        </div>
         <div class='newMove1'> 
-          <iframe src={`https://open.spotify.com/embed/playlist/${playlist[0][main][0]}` } width="250" height="600" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <iframe src={`https://open.spotify.com/embed/playlist/${playlist[0][main][1]}` } width="240" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
-
+        <div class='newMove2'> 
+          <iframe src={`https://open.spotify.com/embed/playlist/${playlist[0][main][0]}` } width="240" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
       </main>
       
     </>
