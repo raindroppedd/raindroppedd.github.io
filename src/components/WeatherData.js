@@ -2,10 +2,9 @@ import React from 'react'
 
 
 
-const WeatherData = ({ data }, {newsData}) => {
+const WeatherData = ({ data }) => {
   const { name, country, temp, id, main, description, temp_min, temp_max, icon, feels_like, speed, deg, humidity } = data;
 
-  //const {article_one, article_two} = newsData.articles;
   
   const playlist = [
     
@@ -16,7 +15,7 @@ const WeatherData = ({ data }, {newsData}) => {
       'Snow': ['7lZs5r4oQV2nutddffLrg0', '4M07HWIlZr7zoXoxDHR5mz'],
       'Mist': ['65dGsaY3dHyV7ipkLKY8DN', '5kSUsy5FU3Wcxd4DBvXFm4'],
       'Smoke':['3hulEh4qbHpzWKQPVwzgMy', '37i9dQZF1DWTcqUzwhNmKv'],
-      'Haze': ['37i9dQZF1DXcnkReojaCnV', '37i9dQZF1DWY4xHQp97fN6'],
+      'Haze': ['37i9dQZF1DWTQwRw56TKNc', '5HiXZfY0Sj2HY6KfcKeBw5'],
       'Dust': ['37i9dQZF1DWXRqgorJj26U', '37i9dQZF1DWZryfp6NSvtz'],
       'Fog':['37i9dQZF1DWVw7c2MHvocy', '7fpzVWdsiJHvV7DuwZ81jR' ],
       'Sand':['4UiM5IjpEO4sOnxD9hork2', '37i9dQZF1DX83I5je4W4rP'],

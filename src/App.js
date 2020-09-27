@@ -11,7 +11,6 @@ class App extends React.Component {
       status: 'init',
       isLoaded: false,
       weatherData: null,
-      newsData: null
     }
   }
 
@@ -41,9 +40,6 @@ class App extends React.Component {
     }
   }
 
-  newsInit = () => {
-    
-  }
 
   getWeatherData = (lat, lon) => {
     const weatherApi = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${process.env.REACT_APP_WEATHER_KEY}`;
@@ -88,43 +84,9 @@ class App extends React.Component {
     );
   }
   
-  getNewsData = () => {
-    const apiKey = 'd44300a8a99146a6afd80231e59737b0'
-      
-    let sources = 'bbc-news'
-    let url = `http://newsapi.org/v2/everything?sources=${sources}&apiKey=${apiKey}`
-
-
-    fetch(url).then((res)=>{
-      //return res.json()
-      var json_data = res.json()
-      var obj = json_data.parse(json_data.articles);
-      console.log(obj)
-    })/*.then((data)=>{
-      const { article_one } = data.articles[1]
-      const { article_two } = data[2].author
-      console.log(article_two);
-
-
-      this.setState({status: 'success', isLoaded: true, article_one, article_two});
-    },
-    (error) => {
-      this.setState({
-        isLoaded: true,
-        error
-      });
-
-    }
-    );    */
-
-  }
-
-
-
 
   onClick = () => {
     this.weatherInit();
-    this.newsInit();
   }
 
 
@@ -140,7 +102,7 @@ class App extends React.Component {
           </button>
         );
       case 'success':
-        return <WeatherData data={this.state.weatherData} />;
+        return <WeatherData data={this.state.weatherData}  />;
       default:
         return <CheckStatus status={status} />;
     }
