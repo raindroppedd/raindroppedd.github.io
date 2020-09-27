@@ -63,3 +63,11 @@ div.newMove2 {
   height: 350px;
   width: 623px;
 }
+
+div.newMove3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 111px;
+  width: 323px;
+}
