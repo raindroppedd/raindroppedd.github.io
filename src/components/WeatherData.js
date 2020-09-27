@@ -141,7 +141,7 @@ const WeatherData = ({ data }) => {
 
         <div class='newMove3'> 
           <img 
-           src={`https://raw.githubusercontent.com/gist/k0ji13/5c8ff08924d477f4038575bb0bab7675/raw/aaa12a6b4812bdabf3dcc50daca88c6d4bd41c5e/raindropped.svg` }  width="222px" height="222px"/>
+           src={`https://raw.githubusercontent.com/gist/k0ji13/5c8ff08924d477f4038575bb0bab7675/raw/aaa12a6b4812bdabf3dcc50daca88c6d4bd41c5e/raindropped.svg` }  width="188px" height="188px"/>
         </div>
 
       </main>
