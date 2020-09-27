@@ -7,7 +7,7 @@ const CheckStatus = ({ status }) => {
   if (status === 'fetching'){
     statusMessage = 'Fetching weather';
   }else if(status === 'unable'){
-    statusMessage = 'Unable to find your location';
+    statusMessage = 'Unable to find your location, please enable location on your browser and refresh';
   }else if(status === 'unsupported'){
     statusMessage = 'Location Feature is blocked or unsupported';
   }else{
