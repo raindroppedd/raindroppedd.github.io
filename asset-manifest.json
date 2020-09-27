@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/raindroppedd.github.io/static/css/main.f4e23e29.chunk.css",
+    "main.js": "/raindroppedd.github.io/static/js/main.6d54f500.chunk.js",
+    "main.js.map": "/raindroppedd.github.io/static/js/main.6d54f500.chunk.js.map",
+    "runtime-main.js": "/raindroppedd.github.io/static/js/runtime-main.86caa687.js",
+    "runtime-main.js.map": "/raindroppedd.github.io/static/js/runtime-main.86caa687.js.map",
+    "static/js/2.4350f6ab.chunk.js": "/raindroppedd.github.io/static/js/2.4350f6ab.chunk.js",
+    "static/js/2.4350f6ab.chunk.js.map": "/raindroppedd.github.io/static/js/2.4350f6ab.chunk.js.map",
+    "index.html": "/raindroppedd.github.io/index.html",
+    "precache-manifest.b34fd2f4fbeacff4dcd9e7253cfc777b.js": "/raindroppedd.github.io/precache-manifest.b34fd2f4fbeacff4dcd9e7253cfc777b.js",
+    "service-worker.js": "/raindroppedd.github.io/service-worker.js",
+    "static/css/main.f4e23e29.chunk.css.map": "/raindroppedd.github.io/static/css/main.f4e23e29.chunk.css.map",
+    "static/js/2.4350f6ab.chunk.js.LICENSE.txt": "/raindroppedd.github.io/static/js/2.4350f6ab.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.86caa687.js",
+    "static/js/2.4350f6ab.chunk.js",
+    "static/css/main.f4e23e29.chunk.css",
+    "static/js/main.6d54f500.chunk.js"
+  ]
+}
