@@ -25,81 +25,85 @@ const WeatherData = ({ data }) => {
     }
     
   ];
-  
+    // Background Initialize
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundSize = "cover";
+    
     // WEATHER-SELECT ALGORITHM STARTS HERE
     if (main === 'Clear'){ // 1 CLEAR
       console.log("YES IT IS CLEAR");
-      document.body.style.backgroundImage = "url('https://www.publicdomainpictures.net/pictures/30000/velka/sunny-day.jpg')";
+      document.body.style.color = "white"
+      document.body.style.backgroundImage = "url('https://i.imgur.com/BcARfKN.gif')";
       
 
     } else if (main === 'Clouds') { // 2 CLOUDS
       console.log("YES IT IS CLOUDY");
-      document.body.style.backgroundImage = "url('https://www.publicdomainpictures.net/pictures/200000/velka/cloudy-sky-1474691616Oo9.jpg')";
-  
+      document.body.style.backgroundImage = "url('https://i.imgur.com/GoXhAEm.gif')"
+
     } else if (main === 'Thunderstorm') { // 3 THUNDERSTORM
       console.log("YES IT IS THUNDER");
       document.body.style.color = "white";
-      document.body.style.backgroundImage = "url('https://www.publicdomainpictures.net/pictures/100000/velka/lightning-bolt.jpg')";
+      document.body.style.backgroundImage = "url('https://i.imgur.com/3lf8BLK.gif')";
     
     } else if (main === 'Drizzle') { // 4 DRIZZLE
       console.log("YES IT IS DRIZZLE");
-      document.body.style.color = "black";
-      document.body.style.backgroundImage = "url('https://www.publicdomainpictures.net/pictures/70000/velka/background-with-rain.jpg')";
+      document.body.style.color = "white";
+      document.body.style.backgroundImage = "url('https://i.imgur.com/zbT8dgf.gif')";
     
     } else if (main === 'Rain') { // 5 RAIN
       console.log("YES IT IS RAINING");
       document.body.style.color = "white";
-      document.body.style.backgroundImage = "url('https://www.publicdomainpictures.net/pictures/30000/velka/rain-1340312240qO5.jpg')";
+      document.body.style.backgroundImage = "url('https://i.imgur.com/9O76DSA.gif')";
     
     } else if (main === 'Snow') { // 6 Snow
       console.log("YES IT IS SNOWING");
       document.body.style.color = "black";
-      document.body.style.backgroundImage = "url('https://www.publicdomainpictures.net/pictures/30000/velka/winter-landscape-13527108010wC.jpg')";
+      document.body.style.backgroundImage = "url('https://i.imgur.com/bqtoVKP.gif')";
     
     } else if (main === 'Ash') { // 7 Ash (ATMOSPHERE STARTS HERE)
       console.log("YES IT IS ASHY");
       document.body.style.color = "black";
-      document.body.style.backgroundImage = "url('https://prd-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/IMG_1934.JPG')";
+      document.body.style.backgroundImage = "url('https://i.imgur.com/AVkmoYq.gif')";
     
     } else if (main === 'Mist') { // 8 Mist
       console.log("YES IT IS MISTY");
       document.body.style.color = "black";
-      document.body.style.backgroundImage = "url('https://prd-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/IMG_1934.JPG')";
+      document.body.style.backgroundImage = "url('https://i.imgur.com/3vDbBtk.gif')";
     
     } else if (main === 'Smoke') { // 9 Smoke
       console.log("YES IT IS SMOKE");
       document.body.style.color = "black";
-      document.body.style.backgroundImage = "url('https://prd-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/IMG_1934.JPG')";
+      document.body.style.backgroundImage = "url('https://i.imgur.com/AVkmoYq.gif')";
     
     } else if (main === 'Haze') { // 10 Haze
       console.log("YES IT IS HAZE");
       document.body.style.color = "black";
-      document.body.style.backgroundImage = "url('https://prd-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/IMG_1934.JPG')";
+      document.body.style.backgroundImage = "url('https://i.imgur.com/XB7mRaV.gif')";
     
     } else if (main === 'Dust') { // 11 Dust
       console.log("YES IT IS DUST");
       document.body.style.color = "black";
-      document.body.style.backgroundImage = "url('https://prd-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/IMG_1934.JPG')";
+      document.body.style.backgroundImage = "url('https://i.imgur.com/q6dyVao.gif')";
     
     } else if (main === 'Sand') { // 12 Sand
       console.log("YES IT IS SAND");
       document.body.style.color = "black";
-      document.body.style.backgroundImage = "url('https://prd-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/IMG_1934.JPG')";
+      document.body.style.backgroundImage = "url('https://i.imgur.com/q6dyVao.gif')";
     
     } else if (main === 'Squall') { // 13 Squall
       console.log("YES IT IS SQUALL");
       document.body.style.color = "white";
-      document.body.style.backgroundImage = "url('https://upload.wikimedia.org/wikipedia/commons/1/15/Winslow_Homer_Summer_Squall.jpg')";
+      document.body.style.backgroundImage = "url('https://i.imgur.com/nJiFKuT.gif')";
     
     } else if (main === 'Tornado') { // 14 Tornado
       console.log("YES IT IS TORNADO");
-      document.body.style.color = "black";
-      document.body.style.backgroundImage = "url('https://www.publicdomainpictures.net/pictures/180000/velka/tornado-funnel-cloud.jpg')";
+      document.body.style.color = "white";
+      document.body.style.backgroundImage = "url('https://i.imgur.com/iuYUjJZ.gif')";
     
     } else if (main === 'Fog') { // 15 Fog
       console.log("YES IT IS FOG");
       document.body.style.color = "black";
-      document.body.style.backgroundImage = "url('https://www.publicdomainpictures.net/pictures/290000/velka/fog-1553265152e2l.jpg')";
+      document.body.style.backgroundImage = "url('https://i.imgur.com/3vDbBtk.gif')";
     }
     // WEATHER-SELECT ALGORITHM ENDS HERE
   
@@ -127,10 +131,10 @@ const WeatherData = ({ data }) => {
         </div>
 
         <div class='newMove1'> 
-          <iframe src={`https://open.spotify.com/embed/playlist/${playlist[0][main][1]}` } width="240" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <iframe src={`https://open.spotify.com/embed/playlist/${playlist[0][main][1]}` } width="240" height="420" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
         <div class='newMove2'> 
-          <iframe src={`https://open.spotify.com/embed/playlist/${playlist[0][main][0]}` } width="240" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <iframe src={`https://open.spotify.com/embed/playlist/${playlist[0][main][0]}` } width="240" height="420" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
       </main>
       

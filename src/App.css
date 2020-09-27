@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: url('https://source.unsplash.com/collection/1408037/1600x900') no-repeat center; */
+  background-repeat: no-repeat; 
 }
 
 
@@ -52,6 +52,7 @@ div.newMove1 {
   position: absolute;
   bottom: 0;
   right: 0;
+  height: 350px;
   width: 0px;
 }
 
@@ -59,5 +60,6 @@ div.newMove2 {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 622px;
+  height: 350px;
+  width: 623px;
 }
