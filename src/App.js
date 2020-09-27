@@ -10,7 +10,8 @@ class App extends React.Component {
     this.state = {
       status: 'init',
       isLoaded: false,
-      weatherData: null
+      weatherData: null,
+      newsData: null
     }
   }
 
@@ -38,6 +39,10 @@ class App extends React.Component {
       this.setState({status: 'unsupported'});
       alert('Your browser does not support location tracking, or permission is denied.');
     }
+  }
+
+  newsInit = () => {
+    
   }
 
   getWeatherData = (lat, lon) => {
@@ -83,9 +88,45 @@ class App extends React.Component {
     );
   }
   
+  getNewsData = () => {
+    const apiKey = 'd44300a8a99146a6afd80231e59737b0'
+      
+    let sources = 'bbc-news'
+    let url = `http://newsapi.org/v2/everything?sources=${sources}&apiKey=${apiKey}`
+
+
+    fetch(url).then((res)=>{
+      //return res.json()
+      var json_data = res.json()
+      var obj = json_data.parse(json_data.articles);
+      console.log(obj)
+    })/*.then((data)=>{
+      const { article_one } = data.articles[1]
+      const { article_two } = data[2].author
+      console.log(article_two);
+
+
+      this.setState({status: 'success', isLoaded: true, article_one, article_two});
+    },
+    (error) => {
+      this.setState({
+        isLoaded: true,
+        error
+      });
+
+    }
+    );    */
+
+  }
+
+
+
+
   onClick = () => {
     this.weatherInit();
+    this.newsInit();
   }
+
 
   returnActiveView = (status) => {
     switch(status) {
@@ -124,7 +165,8 @@ class App extends React.Component {
         <div className='container'>
               {this.returnActiveView(this.state.status)}
         </div>
-      </div>
+        <div id="root"></div>
+        </div>
       </body>
     );
   }

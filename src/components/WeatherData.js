@@ -1,8 +1,11 @@
 import React from 'react'
 
 
-const WeatherData = ({ data }) => {
+
+const WeatherData = ({ data }, {newsData}) => {
   const { name, country, temp, id, main, description, temp_min, temp_max, icon, feels_like, speed, deg, humidity } = data;
+
+  //const {article_one, article_two} = newsData.articles;
   
   const playlist = [
     
@@ -110,7 +113,7 @@ const WeatherData = ({ data }) => {
   return (
     <>
       <main>
-
+        
         <div className='weather-main'>
           <div> 
             <h1 className='description'>{description}</h1>
