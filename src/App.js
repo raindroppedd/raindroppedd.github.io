@@ -4,6 +4,8 @@ import './App.css';
 import WeatherData from './components/WeatherData'
 import CheckStatus from './components/CheckStatus'
 
+// use rm -r node_modules to delete node_modules
+
 class App extends React.Component {
   constructor(props) {
     super(props);
